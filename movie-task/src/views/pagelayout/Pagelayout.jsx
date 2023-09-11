@@ -4,6 +4,10 @@ import searchIcon from "../../assets/Search.png";
 import imbd from "../../assets/imbd.png";
 import play from "../../assets/Play.png";
 import fruit from "../../assets/PngItem_1381056 1.png";
+import facebook from "../../assets/fa-brands_facebook-square.png";
+import instagram from "../../assets/fa-brands_instagram.png";
+import twitter from "../../assets/fa-brands_twitter.png";
+import youtube from "../../assets/fa-brands_youtube.png";
 import classes from "./Pagelayout.module.css";
 import Movies from "../movies/Movies";
 
@@ -12,7 +16,10 @@ const Pagelayout = () => {
     <>
       <div className={classes.hero}>
         {/* for the top sections */}
-        <nav className="flex items-center justify-between px-[5.4rem] py-[1.75rem]">
+        <nav
+          className="flex items-center justify-between px-[5.4rem] py-[1.75rem]
+       "
+        >
           <div className="flex items-center gap-[1.5rem]">
             <img src={movielogo} alt="moviebox" className="cursor-pointer" />
             <p className="text-white text-[1.5rem] font-[700] cursor-pointer">
@@ -23,12 +30,12 @@ const Pagelayout = () => {
           {/* search input */}
           <form
             action="#"
-            className="flex items-center h-[2.24rem] rounded-md bg-transparent border-2 border-white px-3"
+            className="flex items-center rounded-md bg-transparent border-2 border-white px-3  "
           >
             <input
               type="text"
               placeholder="What do you want to watch?"
-              className="w-[33.81rem] h-[2.24rem] rounded-md bg-transparent border-0 border-white outline-none placeholder:text-white "
+              className="w-[35.81rem] h-[2.24rem] rounded-md bg-transparent border-0 border-white outline-none placeholder:text-white "
             />
 
             <img src={searchIcon} alt="searchicon" className="inline" />
@@ -71,10 +78,10 @@ const Pagelayout = () => {
             </div>
           </div>
           <div className="">
-            <ul className="text-[0.75rem] inline-flex gap-1 flex-col items-center">
+            <ul className="text-[0.75rem] inline-flex gap-1 flex-col items-center text-[#9CA3AF]">
               <li>1</li>
               <li>2</li>
-              <li className="text-[1rem]"> 3</li>
+              <li className="text-[1rem] text-white"> 3</li>
               <li>4</li>
               <li>5</li>
             </ul>
@@ -85,10 +92,23 @@ const Pagelayout = () => {
       <Movies />
 
       <div>
-        <div>
-          <p>iconheres</p>
-          <p>text here</p>
-          <p>copyright yarns here</p>
+        <div className="grid items-center justify-center gap-[2.25rem] pt-[6.5rem] pb-[4.6rem]">
+          <div className="flex items-center gap-[3rem] justify-center">
+            <img src={facebook} alt="facebook" className="cursor-pointer" />
+            <img src={instagram} alt="instagram" className="cursor-pointer" />
+            <img src={twitter} alt="twitter" className="cursor-pointer" />
+            <img src={youtube} alt="youtube" className="cursor-pointer" />
+          </div>
+          <div>
+            <ul className="flex items-center gap-[3rem] font-bold text-[#111827] text-[1rem]">
+              <li className="cursor-pointer">Conditions of Use</li>
+              <li className="cursor-pointer">Privacy & Policy</li>
+              <li className="cursor-pointer">Press Room</li>
+            </ul>
+          </div>
+          <p className="font-bold text-[#6B7280] text-sm text-center">
+            © 2021 MovieBox by Adriana Eka Prayudha
+          </p>
         </div>
       </div>
     </>
