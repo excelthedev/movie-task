@@ -5,6 +5,7 @@ import imbd from "../../assets/imbd.png";
 import play from "../../assets/Play.png";
 import fruit from "../../assets/PngItem_1381056 1.png";
 import classes from "./Pagelayout.module.css";
+import Movies from "../movies/Movies";
 
 const Pagelayout = () => {
   return (
@@ -78,6 +79,16 @@ const Pagelayout = () => {
               <li>5</li>
             </ul>
           </div>
+        </div>
+      </div>
+
+      <Movies />
+
+      <div>
+        <div>
+          <p>iconheres</p>
+          <p>text here</p>
+          <p>copyright yarns here</p>
         </div>
       </div>
     </>
