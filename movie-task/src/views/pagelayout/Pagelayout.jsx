@@ -10,6 +10,7 @@ import twitter from "../../assets/fa-brands_twitter.png";
 import youtube from "../../assets/fa-brands_youtube.png";
 import classes from "./Pagelayout.module.css";
 import Movies from "../movies/Movies";
+import wick from "../../assets/Poster.png";
 
 const Pagelayout = () => {
   return (

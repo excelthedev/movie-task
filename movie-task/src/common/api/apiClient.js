@@ -1,10 +1,4 @@
-import axios from "axios";
+//decided not to use an env key to make it easier for beginners so just change the api key from here and enjoy yourself
+const apiClient = "1566d1f72c0b1f7acb9410e56ee1c0e5";
 
-const apiGeneral = axios.create({
-  baseURL: "",
-  timeout: 1000,
-  headers: {
-    Accept: "",
-    Authorization: "",
-  },
-});
+export default apiClient;

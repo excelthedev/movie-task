@@ -19,8 +19,8 @@ const Movies = () => {
             </p>
           </div>
           {/* movies component in grid  */}
-          <div className="grid grid-cols-4 items-center gap-[5rem]">
-            {/* <div className=" grid gap-[0.75rem]">
+
+          {/* <div className=" grid gap-[0.75rem]">
               <img src={TestData} alt="testdata" className="w-full" />
               <p className="text-[#9CA3AF] font-bold text-xs">
                 USA,2016- Current
@@ -42,8 +42,7 @@ const Movies = () => {
                 Action, Adventure, Horror
               </p>
             </div> */}
-            <MovieData />
-          </div>
+          <MovieData />
         </div>
       </div>
     </>
