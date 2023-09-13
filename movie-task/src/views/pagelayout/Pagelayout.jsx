@@ -11,8 +11,17 @@ import youtube from "../../assets/fa-brands_youtube.png";
 import classes from "./Pagelayout.module.css";
 import Movies from "../movies/Movies";
 import wick from "../../assets/Poster.png";
+import { useState } from "react";
 
 const Pagelayout = () => {
+  const [search, setSearch] = useState("");
+
+  const formSubmission = (e) => {
+    e.preventDefault();
+    console.log(search);
+    setSearch("");
+  };
+
   return (
     <>
       <div className={classes.hero}>
@@ -30,13 +39,15 @@ const Pagelayout = () => {
 
           {/* search input */}
           <form
-            action="#"
+            onSubmit={formSubmission}
             className="flex items-center rounded-md bg-transparent border-2 border-white px-3  "
           >
             <input
               type="text"
               placeholder="What do you want to watch?"
               className="w-[35.81rem] h-[2.24rem] rounded-md bg-transparent border-0 border-white outline-none placeholder:text-white "
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
 
             <img src={searchIcon} alt="searchicon" className="inline" />

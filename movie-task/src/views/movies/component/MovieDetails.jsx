@@ -6,6 +6,7 @@ import apiClient from "../../../common/api/apiClient";
 const MovieDetails = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState([]);
+  const [error, setError] = useState("");
   const api_key = apiClient;
 
   const getMovieDetails = async () => {
@@ -30,7 +31,7 @@ const MovieDetails = () => {
 
       setMovie([updatedMovie]);
     } catch (error) {
-      console.log(error);
+      setError(error);
     }
   };
 
@@ -46,16 +47,10 @@ const MovieDetails = () => {
             movie.map((movie) => (
               <div key={movie.id}>
                 <h1>Movie-id: {movie.id}</h1>
-                <h2 data-testid="movie-title">Movie-title: {movie.title}</h2>
-                <h3 data-testid="movie-release-date">
-                  Movie Release Date (in UTC): {movie.release_date}
-                </h3>
-                <h4 data-testid="movie-runtime">
-                  Movie-runtime (in minutes): {movie.runtime} minutes
-                </h4>
-                <h5 data-testid="movie-overview">
-                  Movie-Overview: {movie.overview}
-                </h5>
+                <h2 data-testid="movie-title"> {movie.title}</h2>
+                <h3 data-testid="movie-release-date">{movie.release_date}</h3>
+                <h4 data-testid="movie-runtime">{movie.runtime} minutes</h4>
+                <h5 data-testid="movie-overview">{movie.overview}</h5>
               </div>
             ))
           ) : (

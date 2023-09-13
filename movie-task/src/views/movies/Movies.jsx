@@ -1,10 +1,7 @@
-import React from "react";
 import rightArrow from "../../assets/Chevron right.png";
 import classes from "./Movies.module.css";
 import MovieData from "./component/MovieData";
-import TestData from "../../assets/moviePoster.png";
-import imbd from "../../assets/imbd.png";
-import fruit from "../../assets/PngItem_1381056 1.png";
+
 const Movies = () => {
   return (
     <>

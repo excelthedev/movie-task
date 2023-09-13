@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import apiClient from "../../../common/api/apiClient";
+import heart from "../../../assets/Heart.png";
 
 const MovieData = () => {
   const [movieList, setMovieList] = useState([]);
@@ -27,13 +28,16 @@ const MovieData = () => {
         {movieList.slice(0, 10).map((movie) => (
           <div key={movie.id}>
             <Link to={`/movie/${movie.id}`}>
-              <div className=" grid gap-[0.75rem] cursor-pointer">
+              <div className=" grid gap-[0.75rem] cursor-pointer relative">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt="testdata"
                   className="w-full"
                   data-testid="movie-poster"
                 />
+                <p className="bg-[#F3F4F6] brightness-[1] p-1 absolute rounded-2xl left-[14rem] top-[0.97rem] ">
+                  <img src={heart} alt="heart" />
+                </p>
                 <p className="text-[#9CA3AF] font-bold text-xs">
                   USA,{" "}
                   <span data-testid="movie-release-date">
