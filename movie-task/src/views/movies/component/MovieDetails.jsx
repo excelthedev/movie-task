@@ -104,7 +104,7 @@ const MovieDetails = () => {
                     <img
                       src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                       alt="image background here"
-                      className=" w-full h-[50svh] rounded-3xl"
+                      className=" w-full h-[60svh] rounded-3xl"
                     />
                     <div className="flex justify-between">
                       <div className="flex gap-4 items-center pt-3">
@@ -123,10 +123,10 @@ const MovieDetails = () => {
                           </span>{" "}
                           mins
                         </p>
-                        <span className="rounded-full inline-block  py-[2px] px-[10px] text-sm border-[1px] border-[#F8E7EB] text-[#B91C1C]">
+                        <span className="rounded-full inline-block  py-[2px] px-[10px] text-sm border-[1px] border-[#F8E7EB] text-[#B91C1C] font-semibold">
                           Action
                         </span>
-                        <span className="border-[#F8E7EB] rounded-3xl inline-block py-[2px] px-[10px] text-sm border-[1px] text-[#B91C1C]">
+                        <span className="border-[#F8E7EB] rounded-3xl inline-block py-[2px] px-[10px] text-sm border-[1px] text-[#B91C1C] font-semibold">
                           Drama
                         </span>
                       </div>
