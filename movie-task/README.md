@@ -23,9 +23,11 @@ If the output is not the version of your nodejs installation, install nodejs fro
 
 ### ⏳ **Installing Packages**
 
-To run application on local environment you need to install the dependencies.
+To run application on local environment you need to run the following command.
 
 ```bash
+git clone https://github.com/excelthedev/movie-task.git
+cd movie-task
 npm install
 ```
 
