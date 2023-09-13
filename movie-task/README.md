@@ -12,7 +12,7 @@ Moviebox is built with the [React + Vite](https://vitejs.dev/guide/) .
 
 ### ⚡ **Getting Started**
 
-It is important to note that the API being used to fetch the movies is built with the [TMBD API](https://developer.themoviedb.org/docs/getting-started)
+It is important to note that the API being used to fetch the movies is built with the [TMBD API](https://developer.themoviedb.org/docs/getting-started) .
 Make sure you have nodejs installed by running the following command:
 
 ```bash
