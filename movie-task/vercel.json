@@ -1,0 +1,4 @@
+{
+"routes": If "src": " [^.]+", "dest": "/",
+"status": 200 }
+}
