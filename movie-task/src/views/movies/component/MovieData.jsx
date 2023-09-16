@@ -27,7 +27,7 @@ const MovieData = () => {
       >
         {movieList.slice(0, 10).map((movie) => (
           <div key={movie.id}>
-            <Link to={`/movie/${movie.id}`}>
+            <Link to={`/movies/${movie.id}`}>
               <div className=" grid gap-[0.75rem] cursor-pointer relative">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
