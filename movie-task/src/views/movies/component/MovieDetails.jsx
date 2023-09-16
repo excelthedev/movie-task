@@ -114,15 +114,21 @@ const MovieDetails = () => {
                           data-testid="movie-title"
                         >
                           {movie.title} •{" "}
-                          <span data-testid="movie-release-date">
-                            {movie.release_date}
-                          </span>{" "}
-                          • PG-13 •{" "}
-                          <span data-testid="movie-runtime">
-                            {movie.runtime}
-                          </span>{" "}
-                          mins
+                       {" "}
+                        
+                          
+                          
                         </p>
+
+                        <p data-testid="movie-runtime">
+                            {movie.runtime} mins
+
+                            • PG-13 •{" "}
+                          </p>
+
+                           <p data-testid="movie-release-date">
+                            {movie.release_date}
+                          </p>
                         <span className="rounded-full inline-block  py-[2px] px-[10px] text-sm border-[1px] border-[#F8E7EB] text-[#B91C1C] font-semibold">
                           Action
                         </span>
